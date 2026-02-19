@@ -1,75 +1,128 @@
-**GlucoNet-MM: A multimodal attention-based multi-task learning framework with decision transformer for personalised and explainable blood glucose forecasting (2025).**
+# Mini GlucoNet-MM  
+**Multimodal, Explainable, and Uncertainty-Aware Blood Glucose Forecasting for Personalized Healthcare**
 
 ![Home](./Home.png)
 
-# Mini GlucoNet-MM Prototype  
-### Multimodal Attention-Based Blood Glucose Forecasting
+## Overview
+
+This repository presents a **research-oriented prototype** exploring **multimodal** and **explainable machine learning** for personalized **blood-glucose prediction** in diabetes care.
+
+The project is motivated by emerging directions in:
+
+- Uncertainty-aware AI for healthcare  
+- Self-adaptive intelligent systems  
+- Multimodal physiological data modeling  
+- Interpretable clinical decision support  
+
+These themes closely relate to current research in **AI-driven healthcare** and **intelligent adaptive systems**.
 
 ---
 
-## Objective
+## Research Motivation
 
-The goal of this prototype is to **practically explore multimodal and explainable deep learning methods** for short-term blood glucose prediction in diabetes care.
+Accurate glucose prediction alone is **not sufficient** for real-world clinical deployment.
+
+Healthcare AI systems must also provide:
+
+- **Interpretability** for clinician trust  
+- **Personalization** across patient variability  
+- **Robustness** under uncertain physiological signals  
+- **Adaptive decision support** over time  
+
+This prototype explores these challenges through a **compact experimental framework**.
 
 ---
 
 ## What This Prototype Demonstrates
 
-- Multimodal healthcare time-series learning  
-  - CGM glucose  
-  - insulin dosage  
-  - carbohydrate intake  
+### 1. Multimodal Healthcare Learning
+Integration of multiple physiological signals:
 
-- Attention-based temporal deep learning (GRU + attention)
+- Continuous glucose monitoring (CGM)  
+- Insulin dosage  
+- Carbohydrate intake  
 
-- Short-term glucose prediction capability
+to model **temporal metabolic dynamics**.
 
-- Basic explainability through **attention heatmap visualization**
+### 2. Explainable Temporal Modeling
+Use of:
+
+- **GRU-based sequence encoder**  
+- **Attention mechanism**  
+
+to highlight **clinically relevant time steps** influencing predictions.
+
+### 3. Short-Term Personalized Forecasting
+Prediction of **future glucose trajectories** tailored to **individual patient patterns**.
+
+### 4. Initial Uncertainty Awareness *(Research Direction)*
+Exploration toward:
+
+- Prediction confidence estimation  
+- Robustness under noisy physiological data  
+- Reliability for safety-critical healthcare AI  
+
+This connects to broader research on **uncertainty in intelligent systems**.
 
 ---
 
 ## Method Overview
 
-1. Multimodal physiological signals are normalized and converted into time-series sequences.  
-2. A **GRU encoder** captures temporal glucose dynamics.  
-3. An **attention mechanism** highlights important time steps.  
-4. The model predicts **future glucose levels**.  
-5. Attention weights provide **simple interpretability**.
+- Normalize multimodal physiological **time-series data**  
+- Encode temporal dynamics using **GRU**  
+- Apply **attention** for interpretability  
+- Predict **short-term glucose levels**  
+- Visualize:
+  - Prediction curves  
+  - Training loss  
+  - Attention heatmaps  
 
 ---
 
-## Results Shown in Notebook
+## Key Learning Outcomes
 
-- Training loss curve  
-- Predicted vs. real glucose comparison  
-- Attention heatmap for explainability  
+This work enabled practical understanding of:
 
-These outputs demonstrate the **practical feasibility of interpretable multimodal glucose forecasting**.
-
----
-
-## Learning Outcomes
-
-Through this prototype, I learned:
-
-- How to design **multimodal healthcare ML pipelines**  
-- Implementation of **attention-based temporal models**  
-- Importance of **interpretability in clinical AI systems**  
-- Practical alignment with **personalized glucose prediction research**
+- Multimodal healthcare **ML pipeline design**  
+- **Interpretable temporal deep learning**  
+- **Personalization** in clinical AI systems  
+- Challenges of **uncertainty and reliability** in medical prediction  
 
 ---
 
-## Future Work
+## Relevance to Ongoing Research Directions
 
-- Use real clinical datasets (OhioT1DM / BrisT1D)  
-- Add **multi-horizon prediction** (multi-task learning)  
-- Integrate **decision-transformer-style policy conditioning**  
-- Improve **uncertainty estimation and explainability**
+This prototype conceptually aligns with research themes in:
+
+- Uncertainty-aware AI for **real-world data**  
+- **Self-adaptive intelligent systems**  
+- AI for **healthcare monitoring and decision support**  
+- **Interpretable and trustworthy machine learning**  
+
+and serves as an **initial exploratory step** toward **research-level healthcare AI systems**.
+
+---
+
+## Future Research Extensions
+
+Planned next steps include:
+
+- Evaluation on real clinical datasets *(e.g., OhioT1DM, BrisT1D)*  
+- **Multi-horizon glucose prediction** (multi-task learning)  
+- Integration of **decision-transformer-style policy modeling**  
+- Improved **uncertainty quantification and explainability**  
+- Progression toward **adaptive, patient-specific decision support**  
 
 ---
 
 ## Author
 
 **Sajjad Ahmad**  
-BS Computer Science  
-Research Interest: Multimodal AI, Explainable Healthcare ML, LLM-driven Clinical Decision Support
+BS Computer Science *(Expected July 2026)*  
+
+**Research Interests:**
+
+- Multimodal AI  
+- Explainable Healthcare Machine Learning  
+- Uncertainty-Aware Intelligent Systems  
+- Personalized Clinical Decision Support  
